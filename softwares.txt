@@ -1,0 +1,15 @@
+code
+slack
+dropbox
+spotify
+skype
+obs
+vlc
+chromium/chrome
+xournal++
+gimp
+flameshot
+bitwarden
+keepassxc
+discord
+
