@@ -2,34 +2,16 @@
 
 sudo apt update && \ 
   sudo apt upgrade && \
-  sudo apt install -y \ 
-  curl             \
-  wget             \
-  vim              \
-  git              \
-  terminator       \
-  zsh              \
-  fonts-powerline  \
-  tmux             \
-  rubygems         
+  sudo apt install -y curl wget vim git terminator zsh fonts-powerline tmux rubygems         
 
 # install dev utils and deps
-sudo apt install -y \
-  software-properties-common \
-  apt-transport-https \
-  libclang-dev \
-  libudev-dev \
-  ffmpeg \
-  ruby-dev \
-  libpq-dev \
-  postgresql-client
+sudo apt install -y software-properties-common apt-transport-https libclang-dev libudev-dev ffmpeg ruby-dev libpq-dev postgresql-client
 
 # install gnome tweak deps
-sudo apt install -y \
-  gnome-tweak-tool \
-  gnome-shell-extension-system-monitor \
-  xdotool
+sudo apt install -y gnome-tweak-tool gnome-shell-extension-system-monitor xdotool
 
+# install autocpu-freq
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer && cd .. && rm -rf auto-cpufreq
 
 # set zsh as primary terminal
 chsh -s $(which zsh)
